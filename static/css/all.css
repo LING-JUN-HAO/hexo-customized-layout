@@ -8,7 +8,8 @@ li a {
     font-family: "Noto Sans TC", sans-serif;
 }
 
-html,body{
+html,
+body {
     width: 100%;
 }
 
@@ -34,4 +35,9 @@ img {
     line-height: 1.2;
     letter-spacing: .12em;
     color: #3B3B3B;
+}
+
+.h5 {
+    font-size: 1.25rem;
+    line-height: 1.2;
 }

@@ -11,6 +11,7 @@
   padding-bottom: 1rem;
 }
 .swiper .swiper-slide .bg img {
+  border: 1px solid #F1F1F1;
   border-radius: 0.5rem;
 }
 .swiper .swiper-slide .content .title {
