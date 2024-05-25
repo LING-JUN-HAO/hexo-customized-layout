@@ -95,7 +95,60 @@
   margin: 0 auto;
 }
 .header-container .nav-list .nav-item {
+  position: relative;
   padding: 0.25rem 0.5rem;
+  transition: all 0.4s ease;
+}
+.header-container .nav-list .nav-item.active a {
+  font-weight: 600;
+  color: #000000;
+}
+.header-container .nav-list .nav-item:hover::before, .header-container .nav-list .nav-item:hover::after, .header-container .nav-list .nav-item:hover .nav-link::before, .header-container .nav-list .nav-item:hover .nav-link::after {
+  opacity: 1;
+}
+.header-container .nav-list .nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+  opacity: 0;
+}
+.header-container .nav-list .nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-bottom: 1px solid #919191;
+  border-right: 1px solid #919191;
+  opacity: 0;
+}
+.header-container .nav-list .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 1px solid #919191;
+  border-left: 1px solid #919191;
+  opacity: 0;
+}
+.header-container .nav-list .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 1px solid #919191;
+  border-right: 1px solid #919191;
+  opacity: 0;
 }
 .header-container .nav-list a {
   line-height: 1.5;
