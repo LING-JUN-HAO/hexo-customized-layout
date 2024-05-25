@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
-* {
-    font-family: "Noto Sans", sans-serif;
+
+*,
+*::before,
+*::after,
+li a {
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+img {
+    max-width: 100%;
 }
 
 
@@ -15,7 +23,7 @@
     line-height: 1.5;
 }
 
-.title-lg{
+.title-lg {
     font-weight: 600;
     font-size: 2rem;
     line-height: 1.2;
