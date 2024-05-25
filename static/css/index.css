@@ -104,7 +104,8 @@
 
 .banner-container,
 .works-container,
-.service-container {
+.service-container,
+.articles {
   max-width: 1920px;
   margin: 0 auto;
 }

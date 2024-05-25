@@ -8,6 +8,10 @@ li a {
     font-family: "Noto Sans TC", sans-serif;
 }
 
+html,body{
+    width: 100%;
+}
+
 img {
     display: block;
     max-width: 100%;
