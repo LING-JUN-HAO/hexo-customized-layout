@@ -288,6 +288,7 @@
   border-radius: 1.5rem;
   width: 306px;
   height: 306px;
+  cursor: pointer;
 }
 .service-container .service-group .service-item {
   display: flex;
@@ -311,6 +312,10 @@
   font-size: 1.75rem;
   line-height: 1.2;
   color: #3B3B3B;
+}
+
+.articles {
+  padding-bottom: 120px;
 }
 
 /*# sourceMappingURL=index.css.map */

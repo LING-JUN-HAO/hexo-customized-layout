@@ -343,6 +343,7 @@
             border-radius: 1.5rem;
             width: 306px;
             height: 306px;
+            cursor: pointer;
         }
 
         .service-item {
@@ -372,4 +373,8 @@
             color: #3B3B3B;
         }
     }
+}
+
+.articles {
+    padding-bottom: 120px;
 }

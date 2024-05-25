@@ -1,0 +1,53 @@
+.swiper {
+  width: 1296px;
+  height: 398px;
+}
+.swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.swiper .swiper-slide .bg {
+  padding-bottom: 1rem;
+}
+.swiper .swiper-slide .bg img {
+  border-radius: 0.5rem;
+}
+.swiper .swiper-slide .content .title {
+  color: #3B3B3B;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+}
+.swiper .swiper-slide .content .tag-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.swiper .swiper-slide .content .tag-container .tag {
+  color: #3B3B3B;
+  background-color: #F1F1F1;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+.swiper .swiper-slide .content .tag-container .date {
+  color: #5B5B5B;
+}
+.swiper .swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  opacity: 1;
+  background: #E9E9E9;
+}
+.swiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.swiper .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #000000;
+}
+
+/*# sourceMappingURL=swiper.css.map */
