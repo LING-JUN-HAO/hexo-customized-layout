@@ -442,6 +442,10 @@
                 max-width: 1296px;
                 margin: 0 auto;
 
+                @media (max-width: 1200px) {
+                    margin: 0 1rem;
+                }
+
                 @media (max-width: 992px) {
                     height: 390px;
                     justify-content: center;
@@ -712,6 +716,10 @@
         align-items: center;
         max-width: 1296px;
         margin: 0 auto;
+
+        @media (max-width: 1200px) {
+            margin: 0 1rem;
+        }
 
         @media (max-width: 992px) {
             flex-direction: column;

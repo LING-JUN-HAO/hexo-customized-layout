@@ -4,9 +4,14 @@
   max-width: 1296px;
   height: 398px;
 
+  @media (max-width: 1200px) {
+    margin: 0 1rem;
+}
+
   @media (max-width: 992px) {
     max-width: 351px;
     height: 1134px;
+    margin: 0 auto;
   }
 
   .swiper-slide {

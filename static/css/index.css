@@ -470,6 +470,11 @@ img {
   max-width: 1296px;
   margin: 0 auto;
 }
+@media (max-width: 1200px) {
+  .works-container .card-group .card .card-box {
+    margin: 0 1rem;
+  }
+}
 @media (max-width: 992px) {
   .works-container .card-group .card .card-box {
     height: 390px;
@@ -719,6 +724,11 @@ img {
   align-items: center;
   max-width: 1296px;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .footer-container .content-container {
+    margin: 0 1rem;
+  }
 }
 @media (max-width: 992px) {
   .footer-container .content-container {
