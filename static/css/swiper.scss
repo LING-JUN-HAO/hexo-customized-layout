@@ -30,7 +30,6 @@
 
     .content {
       .title {
-        // height: 88px;
         color: #3B3B3B;
         font-weight: 700;
         font-size: 1.25rem;
@@ -69,6 +68,10 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 
   .swiper-pagination-bullet-active {

@@ -116,6 +116,11 @@ img {
   justify-content: center;
   gap: 1rem;
 }
+@media (max-width: 992px) {
+  .swiper .swiper-pagination {
+    display: none;
+  }
+}
 .swiper .swiper-pagination-bullet-active {
   color: #fff;
   background: #000000;
