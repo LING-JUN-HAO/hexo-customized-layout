@@ -44,10 +44,8 @@
                 <div class="content">
                     <div class="box">
                         <h2>Hi！我是 Noel</h2>
-                        <p class="fs-5">具有 10 年經驗的<span class="mark-section1">資深 UI 設計師</span>兼<span
-                                class="mark-section2">前端工程師</span>
-                        </p>
-                        <p class="fs-5">技術雙修並行，熱衷於優化使用者的網頁體驗</p>
+                        <p class="fs-5">具有 10 年經驗的<span class="mark-section1">資深 UI 設計師</span>兼<span class="mark-section2">前端工程師</span></p>
+                        <p class="fs-5">技術雙修並行，<span class="next-line">熱衷於優化使用者的網頁體驗</span></p>
                         <p class="skill fs-6">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</p>
                         <ul class="social-container">
                             <li class="social-item">
@@ -69,10 +67,13 @@
                     </div>
                 </div>
                 <div class="bg">
-                    <img src="./static/img/hero-lg.png" alt="背景圖">
+                    <picture>
+                        <source srcset="./static/img/hero-sm.png" media="(max-width: 375px)">
+                        <img src="./static/img/hero-lg.png" alt="背景圖">
+                      </picture>
                 </div>
             </section>
-            <section class="works-container">
+            <!-- <section class="works-container">
                 <div class="title-container">
                     <h3 class="title-box title-lg">
                         <span class="title">作品介紹</span>
@@ -93,7 +94,7 @@
                                     <li class="tag-item fs-6">Bootstrap</li>
                                 </ul>
                                 <div class="more-button-box">
-                                    <a class="more" href="#">完整介紹
+                                    <a class="more btn-lg" href="#">完整介紹
                                         <span class="arrow material-symbols-outlined">
                                             arrow_forward
                                         </span>
@@ -113,7 +114,7 @@
                                     <li class="tag-item fs-6">React</li>
                                 </ul>
                                 <div class="more-button-box">
-                                    <a class="more" href="#">完整介紹
+                                    <a class="more btn-lg" href="#">完整介紹
                                         <span class="arrow material-symbols-outlined">
                                             arrow_forward
                                         </span>
@@ -136,7 +137,7 @@
                                     <li class="tag-item fs-6">ＷordPress</li>
                                 </ul>
                                 <div class="more-button-box">
-                                    <a class="more" href="#">完整介紹
+                                    <a class="more btn-lg" href="#">完整介紹
                                         <span class="arrow material-symbols-outlined">
                                             arrow_forward
                                         </span>
@@ -146,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <section class="service-container">
                 <div class="title-container">
                     <h3 class="title-box title-lg">
@@ -155,26 +156,26 @@
                 </div>
                 <ul class="service-group">
                     <li class="service-item">
-                        <img src="./static/img/service-item-visual.svg" alt="service-icon">
+                        <img class="sub-img" src="./static/img/service-item-visual.svg" alt="service-icon">
                         <h4 class="sub-title">平面設計</h4>
                     </li>
                     <li class="service-item">
-                        <img src="./static/img/service-item-ui.svg" alt="service-icon">
+                        <img class="sub-img" src="./static/img/service-item-ui.svg" alt="service-icon">
                         <h4 class="sub-title">UI 設計</h4>
                     </li>
                     <li class="service-item">
-                        <img src="./static/img/service-item-html&css.svg" alt="service-icon">
+                        <img class="sub-img" src="./static/img/service-item-html&css.svg" alt="service-icon">
                         <h4 class="sub-title">切版服務</h4>
                     </li>
                     <li class="service-item">
-                        <img src="./static/img/service-item-front-end.svg" alt="service-icon">
+                        <img class="sub-img" src="./static/img/service-item-front-end.svg" alt="service-icon">
                         <h4 class="sub-title">前端開發</h4>
                     </li>
                 </ul>
                 <div class="more-container">
                     <p class="more-text">想要合作或瞭解更多？</p>
                     <div class="more-button-box">
-                        <a class="more" href="#">詳細內容與合作流程
+                        <a class="more btn-lg" href="#">詳細內容與合作流程
                             <span class="arrow material-symbols-outlined">
                                 arrow_forward
                             </span>
