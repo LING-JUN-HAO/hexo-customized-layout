@@ -1,6 +1,13 @@
+@import 'all';
+
 .swiper {
   max-width: 1296px;
   height: 398px;
+
+  @media (max-width: 375px) {
+    max-width: 351px;
+    height: 1134px;
+  }
 
   .swiper-slide {
     display: flex;
@@ -10,6 +17,10 @@
     .bg {
       padding-bottom: 1rem;
 
+      @media (max-width: 375px) {
+        height: 250px;
+      }
+
       img {
         border: 1px solid #F1F1F1;
         border-radius: .5rem;
@@ -17,7 +28,7 @@
     }
 
 
-    .content{
+    .content {
       .title {
         color: #3B3B3B;
         font-weight: 700;
@@ -27,19 +38,19 @@
       }
 
 
-      .tag-container{
+      .tag-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .tag{
+        .tag {
           color: #3B3B3B;
           background-color: #F1F1F1;
           padding: .25rem .75rem;
           border-radius: 1rem;
         }
 
-        .date{
+        .date {
           color: #5B5B5B;
         }
       }
@@ -53,7 +64,7 @@
     background: #E9E9E9;
   }
 
-  .swiper-pagination{
+  .swiper-pagination {
     display: flex;
     justify-content: center;
     gap: 1rem;
