@@ -5,6 +5,25 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
+@media (max-width: 992px) {
+  body.overlay {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 992px) {
+  body.overlay::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
@@ -78,6 +97,11 @@ img {
   flex-direction: column;
   cursor: pointer;
 }
+@media (max-width: 992px) {
+  .swiper .swiper-slide {
+    height: auto;
+  }
+}
 .swiper .swiper-slide .bg {
   padding-bottom: 1rem;
 }
@@ -96,6 +120,11 @@ img {
   font-size: 1.25rem;
   line-height: 1.2;
   padding-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  .swiper .swiper-slide .content .title {
+    font-weight: 600;
+  }
 }
 .swiper .swiper-slide .content .tag-container {
   display: flex;
@@ -130,6 +159,9 @@ img {
 .swiper .swiper-pagination-bullet-active {
   color: #fff;
   background: #000000;
+}
+.swiper .swiper-wrapper {
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=swiper.css.map */

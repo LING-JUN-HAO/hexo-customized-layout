@@ -85,6 +85,10 @@
         padding-top: 1.25rem;
     }
 
+    &.service-button-box{
+        padding-top: 1.5rem;
+    }
+
     .more,
     .arrow {
         color: #FFFFFF;
@@ -138,7 +142,7 @@
 
         @media (max-width: 992px) {
             height: 33px;
-            width: 74px;
+            width: 86px;
         }
     }
 
@@ -227,53 +231,52 @@
                 opacity: 1;
             }
 
-            &::before {
+            &::before,
+            &::after{
                 content: '';
                 position: absolute;
-                bottom: 0;
-                left: 0;
                 width: .5rem;
                 height: .5rem;
+                opacity: 0;
+            }
+
+            &::before {
+                bottom: 0;
+                left: 0;
                 border-bottom: 1px solid #919191;
                 border-left: 1px solid #919191;
-                opacity: 0;
             }
 
             &::after {
-                content: '';
-                position: absolute;
                 bottom: 0;
                 right: 0;
-                width: .5rem;
-                height: .5rem;
                 border-bottom: 1px solid #919191;
                 border-right: 1px solid #919191;
-                opacity: 0;
             }
 
             .nav-link {
-                &::before {
+                
+                &::before,
+                &::after{
                     content: '';
                     position: absolute;
-                    top: 0;
-                    left: 0;
                     width: .5rem;
                     height: .5rem;
-                    border-top: 1px solid #919191;
-                    border-left: 1px solid #919191;
                     opacity: 0;
                 }
 
+                &::before {
+                    top: 0;
+                    left: 0;
+                    border-top: 1px solid #919191;
+                    border-left: 1px solid #919191;
+                }
+
                 &::after {
-                    content: '';
-                    position: absolute;
                     top: 0;
                     right: 0;
-                    width: .5rem;
-                    height: .5rem;
                     border-top: 1px solid #919191;
                     border-right: 1px solid #919191;
-                    opacity: 0;
                 }
             }
         }
@@ -365,6 +368,13 @@
                 gap: 1rem;
                 padding-top: 3.75rem;
 
+                img{
+                    @media (max-width: 992px) {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+
                 @media (max-width: 992px) {
                     padding-top: 1.5rem;
                     justify-content: center;
@@ -375,7 +385,6 @@
             .mark-section2 {
                 display: inline-block;
                 position: relative;
-                word-break: break-all;
 
                 &::after {
                     content: '';
@@ -536,7 +545,7 @@
             .tag-container{
                 display: flex;
                 justify-content: center;
-                gap: 10px;
+                gap: 8px;
                 padding-top: 1rem;
 
                 .tag-item{
@@ -712,6 +721,10 @@
 
 .articles {
     padding-bottom: 120px;
+
+    @media (max-width: 992px) {
+        padding-bottom: 80px;
+    }
 }
 
 .footer-container {
@@ -755,6 +768,10 @@
 
                 &:first-of-type {
                     padding-top: 1.5rem;
+
+                    @media (max-width: 992px) {
+                        padding-bottom: .25rem;
+                    }
                 }
             }
 
@@ -762,6 +779,10 @@
                 display: inline-block;
                 padding-top: 1.5rem;
                 color: #919191;
+
+                @media (max-width: 992px) {
+                    @include fs-6;
+                }
             }
 
             .logo {
@@ -793,6 +814,9 @@
 
             .contact-text {
                 color: #3B3B3B;
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: 1.5;
             }
 
             &.active {
