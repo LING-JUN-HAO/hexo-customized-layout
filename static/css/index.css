@@ -5,6 +5,21 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
+body.overlay {
+  overflow: hidden;
+}
+
+body.overlay::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
@@ -171,6 +186,9 @@ img {
 .header-container {
   padding: 2rem 0;
   border-bottom: 1px solid #F1F1F1;
+  background-color: white;
+  position: relative;
+  z-index: 3;
 }
 @media (max-width: 992px) {
   .header-container {
@@ -182,6 +200,13 @@ img {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+@media (max-width: 992px) {
+  .header-container h1 {
+    height: 33px;
+    width: 74px;
+    padding-left: 0.75rem;
+  }
 }
 .header-container .hidden-text {
   display: none;
@@ -470,7 +495,7 @@ img {
   max-width: 1296px;
   margin: 0 auto;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1296px) {
   .works-container .card-group .card .card-box {
     margin: 0 1rem;
   }
@@ -725,7 +750,7 @@ img {
   max-width: 1296px;
   margin: 0 auto;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1296px) {
   .footer-container .content-container {
     margin: 0 1rem;
   }
