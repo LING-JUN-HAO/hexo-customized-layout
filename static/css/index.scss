@@ -161,6 +161,7 @@
 
         @media (max-width: 992px) {
             height: 56px;
+            border-bottom: 1px solid #F1F1F1;
         }
     }
 
@@ -594,7 +595,7 @@
             background-size: cover;
 
             @media (max-width: 992px) {
-                background-image: url('../img/homepage-work2-sm.png');
+                background-image: none;
             }
 
             &::before {
@@ -614,6 +615,10 @@
 
                 @media (max-width: 992px) {
                     height: 390px;
+                    width: 100%;
+                    background-image: url('../img/homepage-work2-sm.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
                 }
 
                 .content {

@@ -234,6 +234,7 @@ img {
 @media (max-width: 992px) {
   .header-container nav {
     height: 56px;
+    border-bottom: 1px solid #F1F1F1;
   }
 }
 .header-container .navbar-btn {
@@ -626,7 +627,7 @@ img {
 }
 @media (max-width: 992px) {
   .works-container .card-group .finance {
-    background-image: url("../img/homepage-work2-sm.png");
+    background-image: none;
   }
 }
 .works-container .card-group .finance::before {
@@ -647,6 +648,10 @@ img {
 @media (max-width: 992px) {
   .works-container .card-group .finance .card-box {
     height: 390px;
+    width: 100%;
+    background-image: url("../img/homepage-work2-sm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .works-container .card-group .finance .card-box .content {
