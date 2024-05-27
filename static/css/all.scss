@@ -7,19 +7,24 @@ body {
     font-family: "Noto Sans TC", sans-serif;
 }
 
-body.overlay{
-    overflow: hidden;
+body.overlay {
+    @media (max-width: 992px) {
+        overflow: hidden;
+    }
 }
 
+
 body.overlay::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    @media (max-width: 992px) {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
 }
 
 .material-symbols-outlined {
@@ -79,13 +84,13 @@ img {
     letter-spacing: .12em;
 }
 
-.btn-lg{
+.btn-lg {
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.5;
 }
 
-.btn-sm{
+.btn-sm {
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.5;

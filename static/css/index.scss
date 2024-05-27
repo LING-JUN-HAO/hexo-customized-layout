@@ -132,10 +132,13 @@
         top: 50%;
         transform: translateY(-50%);
 
+        @media (max-width: 1296px) {
+            padding-left: .75rem;
+        }
+
         @media (max-width: 992px) {
             height: 33px;
             width: 74px;
-            padding-left: .75rem;
         }
     }
 
