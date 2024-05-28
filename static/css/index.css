@@ -661,6 +661,9 @@ img {
 .works-container .card-group .aesthetics {
   background-image: url("../img/homepage-work3-bg.png");
 }
+.works-container .card-group .aesthetics .card-box {
+  align-items: center;
+}
 @media (max-width: 992px) {
   .works-container .card-group .aesthetics .content-sm {
     padding-bottom: 80px;

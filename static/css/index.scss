@@ -631,6 +631,10 @@
         .aesthetics {
             background-image: url('../img/homepage-work3-bg.png');
 
+            .card-box{
+                align-items: center;
+            }
+
             .content-sm{
                 @media (max-width: 992px) {
                     padding-bottom: 80px;
