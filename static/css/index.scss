@@ -85,7 +85,7 @@
         padding-top: 1.25rem;
     }
 
-    &.service-button-box{
+    &.service-button-box {
         padding-top: 1.5rem;
     }
 
@@ -98,6 +98,7 @@
         display: flex;
         align-items: center;
         padding: 1rem 2rem;
+
         @media (max-width: 992px) {
             padding: .5rem 1rem;
         }
@@ -233,7 +234,7 @@
             }
 
             &::before,
-            &::after{
+            &::after {
                 content: '';
                 position: absolute;
                 width: .5rem;
@@ -256,9 +257,9 @@
             }
 
             .nav-link {
-                
+
                 &::before,
-                &::after{
+                &::after {
                     content: '';
                     position: absolute;
                     width: .5rem;
@@ -369,7 +370,7 @@
                 gap: 1rem;
                 padding-top: 3.75rem;
 
-                img{
+                img {
                     @media (max-width: 992px) {
                         height: 40px;
                         width: 40px;
@@ -425,7 +426,7 @@
     .bg {
         width: 60.104%;
 
-        img{
+        img {
             @media (max-width: 992px) {
                 width: 100%;
                 object-fit: cover;
@@ -439,11 +440,12 @@
 }
 
 .works-container {
-    .title-container{
+    .title-container {
         @media (max-width: 992px) {
             padding-top: 40px;
         }
     }
+
     .card-group {
         display: flex;
         flex-direction: column;
@@ -484,7 +486,7 @@
                     backdrop-filter: blur(3px);
 
                     @media (max-width: 992px) {
-                       display: none;
+                        display: none;
                     }
 
                     .sub-title {
@@ -518,7 +520,7 @@
             }
         }
 
-        .content-sm{
+        .content-sm {
             display: none;
             flex-direction: column;
             position: relative;
@@ -530,7 +532,7 @@
                 display: flex;
             }
 
-            .sub-title{
+            .sub-title {
                 color: #1E1E1E;
                 font-weight: 700;
                 font-size: 1.25rem;
@@ -543,13 +545,13 @@
                 color: #5B5B5B;
             }
 
-            .tag-container{
+            .tag-container {
                 display: flex;
                 justify-content: center;
                 gap: 8px;
                 padding-top: 1rem;
 
-                .tag-item{
+                .tag-item {
                     padding: .25em .75rem;
                     background-color: #F1F1F1;
                     border-radius: 1rem;
@@ -631,16 +633,18 @@
         .aesthetics {
             background-image: url('../img/homepage-work3-bg.png');
 
-            .card-box{
-                align-items: center;
+            .card-box {
+                @media (max-width: 992px) {
+                    align-items: center;
+                }
             }
 
-            .content-sm{
+            .content-sm {
                 @media (max-width: 992px) {
                     padding-bottom: 80px;
                 }
             }
-            
+
 
             &::before {
                 width: 100%;
