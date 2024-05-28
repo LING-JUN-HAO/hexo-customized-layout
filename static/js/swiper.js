@@ -5,6 +5,7 @@ var swiper = new Swiper(".article-swiper-container", {
     993: {
       slidesPerView: 3,
       spaceBetween: 24,
+      allowTouchMove: false,
       direction: 'horizontal',
       pagination: true,
       pagination: {
