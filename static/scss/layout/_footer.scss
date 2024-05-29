@@ -1,0 +1,107 @@
+.footer-container {
+    padding: 80px 0;
+    background-image: url('../img/footer-bg-lg.png');
+
+    @media (max-width: 992px) {
+        padding: 40px 12px;
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1296px;
+        margin: 0 auto;
+
+        @media (max-width: 1296px) {
+            margin: 0 1rem;
+        }
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .content {
+            @media (max-width: 992px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content-text {
+                color: #3B3B3B;
+
+                @media (max-width: 992px) {
+                    @include fs-6;
+                }
+
+                &:first-of-type {
+                    padding-top: 1.5rem;
+
+                    @media (max-width: 992px) {
+                        padding-bottom: .25rem;
+                    }
+                }
+            }
+
+            .email-text {
+                display: inline-block;
+                padding-top: 1.5rem;
+                color: #919191;
+
+                @media (max-width: 992px) {
+                    @include fs-6;
+                }
+            }
+
+            .logo {
+                width: 120px;
+                height: 54px;
+            }
+        }
+    }
+
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 306px;
+
+        .contact-item {
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            padding: .5rem 1.5rem;
+            background-color: #FFFFFF;
+            border: 1px solid #C1C1C1;
+            border-radius: .5rem;
+            cursor: pointer;
+
+            @media (max-width: 992px) {
+                padding: .25rem 1.5rem;
+            }
+
+            .contact-text {
+                color: #3B3B3B;
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: 1.5;
+            }
+
+            &.active {
+                background-color: #000000;
+                border: none;
+
+                a {
+                    color: #FFFFFF;
+                }
+            }
+
+            &:not(.active):hover {
+                background-color: #ddd;
+            }
+        }
+    }
+}
