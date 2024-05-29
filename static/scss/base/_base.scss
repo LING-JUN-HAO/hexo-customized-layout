@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
-
 html,
 body {
     width: 100%;
@@ -8,14 +7,13 @@ body {
 }
 
 body.overlay {
-    @media (max-width: 992px) {
+    @include container-lg{
         overflow: hidden;
     }
 }
 
-
 body.overlay::before {
-    @media (max-width: 992px) {
+    @include container-lg {
         content: "";
         position: fixed;
         top: 0;
@@ -38,71 +36,6 @@ body.overlay::before {
 img {
     display: block;
     max-width: 100%;
+    object-fit: cover;
     height: 100%;
-}
-
-
-.fs-5 {
-    font-size: 1.25rem;
-    line-height: 1.5;
-}
-
-@mixin fs-5 {
-    font-size: 1.25rem;
-    line-height: 1.5;
-}
-
-.fs-6 {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-@mixin fs-6 {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.title-lg {
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 1.2;
-    letter-spacing: .12em;
-    color: #3B3B3B;
-}
-
-.title-sm {
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    letter-spacing: .12em;
-}
-
-@mixin title-sm {
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    letter-spacing: .12em;
-}
-
-.btn-lg {
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.5;
-}
-
-.btn-sm {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-@mixin btn-sm {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.h5 {
-    font-size: 1.25rem;
-    line-height: 1.2;
 }

@@ -3,7 +3,7 @@
     justify-content: center;
     padding-top: 40px;
 
-    @media (max-width: 992px) {
+    @include container-lg{
         padding-top: 1.25rem;
     }
 
@@ -21,9 +21,10 @@
         align-items: center;
         padding: 1rem 2rem;
 
-        @media (max-width: 992px) {
+        @include container-lg{
             padding: .5rem 1rem;
         }
+
     }
 
     .more {

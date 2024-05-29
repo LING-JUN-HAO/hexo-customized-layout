@@ -1,65 +1,27 @@
-
-.fs-5 {
-    font-size: 1.25rem;
-    line-height: 1.5;
+.h5 {
+    @include h5;
 }
 
-@mixin fs-5 {
-    font-size: 1.25rem;
-    line-height: 1.5;
+.fs-5 {
+    @include fs-5;
 }
 
 .fs-6 {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-@mixin fs-6 {
-    font-size: 1rem;
-    line-height: 1.5;
+    @include fs-6;
 }
 
 .title-lg {
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 1.2;
-    letter-spacing: .12em;
-    color: #3B3B3B;
+    @include title-lg;
 }
 
 .title-sm {
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    letter-spacing: .12em;
-}
-
-@mixin title-sm {
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    letter-spacing: .12em;
+    @include title-sm;
 }
 
 .btn-lg {
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.5;
+    @include btn-lg;
 }
 
 .btn-sm {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-@mixin btn-sm {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.h5 {
-    font-size: 1.25rem;
-    line-height: 1.2;
+    @include btn-sm;
 }

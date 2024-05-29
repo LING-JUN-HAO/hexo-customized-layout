@@ -1,3 +1,6 @@
+@import './utils/_mixins';
+@import './vendors/_swiper';
+
 @import './base/_reset';
 @import './base/_base';
 @import './base/_typography';
@@ -8,6 +11,4 @@
 @import './components/_button';
 @import './components/_title';
 
-@import './vendors/swiper';
-
-@import './page/index';
+@import './page/_index';
