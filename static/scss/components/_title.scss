@@ -1,9 +1,9 @@
 .title-container {
-    padding: 120px 0 80px 0;
+    padding: $spacer-30 $spacer-0 $spacer-20 $spacer-0;
     display: flex;
     justify-content: center;
 
-    @media (max-width: 992px) {
+    @include container-lg{
         padding: 80px 63px 40px;
     }
 
@@ -24,23 +24,21 @@
             transform: translateY(-50%);
             width: 94px;
             height: .125rem;
-            background-color: #C1C1C1;
-
+            background-color: $lighterGray;
 
             @include container-lg{
                 width: 56px;
             }
-
         }
 
         &::before {
             right: 100%;
-            margin-right: 1rem;
+            margin-right: $spacer-4;
         }
 
         &::after {
             left: 100%;
-            margin-left: 1rem;
+            margin-left: $spacer-4;
         }
 
         .title {
@@ -54,7 +52,7 @@
                 width: 6px;
                 height: 6px;
                 border-radius: 50%;
-                background-color: #C1C1C1;
+                background-color: $lighterGray;
             }
 
             &::before {
@@ -62,7 +60,7 @@
                 margin-right: 110px;
 
                 @include container-lg{
-                    margin-right: 72px;
+                    margin-right: $spacer-18;
                 }
             }
 
@@ -70,7 +68,7 @@
                 left: 100%;
 
                 @include container-lg{
-                    margin-left: 72px;
+                    margin-left: $spacer-18;
                 }
             }
         }

@@ -1,43 +1,43 @@
 @mixin h5 {
-    font-size: 1.25rem;
-    line-height: 1.2;
+    font-size: $spacer-5;
+    line-height: $lh-2;
 }
 
 @mixin fs-5 {
-    font-size: 1.25rem;
-    line-height: 1.5;
+    font-size: $spacer-5;
+    line-height: $lh-3;
 }
 
 @mixin fs-6 {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: $spacer-4;
+    line-height: $lh-3;
 }
 
 @mixin title-lg {
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 1.2;
+    font-weight: $fw-600;
+    font-size: $spacer-8;
+    line-height: $lh-2;
     letter-spacing: .12em;
-    color: #3B3B3B;
+    color: $darkGray;
 }
 
 @mixin title-sm {
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-weight: $fw-700;
+    font-size: $spacer-6;
+    line-height: $lh-2;
     letter-spacing: .12em;
 }
 
 @mixin btn-lg {
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.5;
+    font-weight: $fw-600;
+    font-size: $spacer-5;
+    line-height: $lh-3;
 }
 
 @mixin btn-sm {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-weight: $fw-700;
+    font-size: $spacer-4;
+    line-height: $lh-3;
 }
 
 @mixin container-contentWidth{

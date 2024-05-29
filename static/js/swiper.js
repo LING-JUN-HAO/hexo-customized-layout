@@ -1,7 +1,6 @@
 var swiper = new Swiper(".article-swiper-container", {
   slidesPerView: 3,
   direction: 'vertical',
-  allowTouchMove: false,
   breakpoints: {
     993: {
       slidesPerView: 3,

@@ -1,9 +1,12 @@
 .footer-container {
-    padding: 80px 0;
+    padding: $spacer-30 $spacer-0;
     background-image: url('../img/footer-bg-lg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    @media (max-width: 992px) {
-        padding: 40px 12px;
+    @include container-lg {
+        background-image: url('../img/footer-bg-sm.png');
+        padding: $spacer-10 $spacer-3;
     }
 
     .content-container {
@@ -11,47 +14,47 @@
         justify-content: space-between;
         align-items: center;
         max-width: 1296px;
-        margin: 0 auto;
+        margin: $spacer-0 $spacer-auto;
 
-        @media (max-width: 1296px) {
-            margin: 0 1rem;
+        @include container-contentWidth {
+            margin: $spacer-0 $spacer-4;
         }
 
-        @media (max-width: 992px) {
+        @include container-lg {
             flex-direction: column;
             align-items: center;
-            gap: 40px;
+            gap: $spacer-10;
         }
 
         .content {
-            @media (max-width: 992px) {
+            @include container-lg {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
 
             .content-text {
-                color: #3B3B3B;
+                color: $darkGray;
 
-                @media (max-width: 992px) {
+                @include container-lg {
                     @include fs-6;
                 }
 
                 &:first-of-type {
-                    padding-top: 1.5rem;
+                    padding-top: $spacer-6;
 
-                    @media (max-width: 992px) {
-                        padding-bottom: .25rem;
+                    @include container-lg {
+                        padding-bottom: $spacer-1;
                     }
                 }
             }
 
             .email-text {
                 display: inline-block;
-                padding-top: 1.5rem;
-                color: #919191;
+                padding-top: $spacer-6;
+                color: $gray;
 
-                @media (max-width: 992px) {
+                @include container-lg {
                     @include fs-6;
                 }
             }
@@ -66,41 +69,42 @@
     .contact-list {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: $spacer-6;
         width: 306px;
 
         .contact-item {
             display: flex;
-            gap: .5rem;
+            gap: $spacer-2;
             align-items: center;
-            padding: .5rem 1.5rem;
-            background-color: #FFFFFF;
-            border: 1px solid #C1C1C1;
+            padding: $spacer-2 $spacer-6;
+            background-color: $white;
+            border: 1px solid $lightGray;
             border-radius: .5rem;
             cursor: pointer;
 
-            @media (max-width: 992px) {
-                padding: .25rem 1.5rem;
+
+            @include container-lg {
+                padding: $spacer-1 $spacer-6;
             }
 
             .contact-text {
-                color: #3B3B3B;
-                font-weight: 700;
-                font-size: 1.25rem;
-                line-height: 1.5;
+                font-weight: $fw-700;
+                font-size: $fs-5;
+                line-height: $lh-3;
+                color: $darkGray;
             }
 
             &.active {
-                background-color: #000000;
+                background-color: $black;
                 border: none;
 
                 a {
-                    color: #FFFFFF;
+                    color: $white;
                 }
             }
 
             &:not(.active):hover {
-                background-color: #ddd;
+                background-color: $extraLightGray;
             }
         }
     }

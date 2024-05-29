@@ -2,14 +2,14 @@
   max-width: 1296px;
   height: 398px;
 
-  @media (max-width: 1200px) {
-    margin: 0 1rem;
+  @include container-xl {
+    margin: $spacer-0 $spacer-4;
   }
 
-  @media (max-width: 992px) {
+  @include container-lg {
     max-width: 351px;
     height: 1134px;
-    margin: 0 auto;
+    margin: $spacer-0 $spacer-auto;
   }
 
   .swiper-slide {
@@ -17,34 +17,33 @@
     flex-direction: column;
     cursor: pointer;
 
-    @media (max-width: 992px) {
+    @include container-lg {
       height: auto;
     }
 
     .bg {
-      padding-bottom: 1rem;
+      padding-bottom: $spacer-4;
 
-      @media (max-width: 992px) {
+      @include container-lg {
         height: 250px;
       }
 
       img {
-        border: 1px solid #F1F1F1;
+        border: 1px solid $backgroundDark100;
         border-radius: .5rem;
       }
     }
 
-
     .content {
       .title {
-        color: #3B3B3B;
-        font-weight: 700;
-        font-size: 1.25rem;
-        line-height: 1.2;
-        padding-bottom: 1rem;
+        color: $darkGray;
+        font-weight: $fw-700;
+        font-size: $spacer-5;
+        line-height: $lh-2;
+        padding-bottom: $spacer-4;
 
-        @media (max-width: 992px) {
-          font-weight: 600;
+        @include container-lg {
+          font-weight: $fw-600;
         }
       }
 
@@ -55,14 +54,14 @@
         align-items: center;
 
         .tag {
-          color: #3B3B3B;
-          background-color: #F1F1F1;
-          padding: .25rem .75rem;
+          color: $darkGray;
+          background-color: $backgroundDark100;
+          padding: $spacer-1 $spacer-3;
           border-radius: 1rem;
         }
 
         .date {
-          color: #5B5B5B;
+          color: $mediumGray;
         }
       }
     }
@@ -72,13 +71,13 @@
     width: .75rem;
     height: .75rem;
     opacity: 1;
-    background: #E9E9E9;
+    background: $lighterGray;
   }
 
   .swiper-pagination {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: $spacer-4;
 
     @media (max-width: 992px) {
       display: none;
@@ -86,8 +85,8 @@
   }
 
   .swiper-pagination-bullet-active {
-    color: #fff;
-    background: #000000;
+    color: $white;
+    background: $black;
   }
 
 }
