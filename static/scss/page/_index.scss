@@ -3,10 +3,13 @@
 @import './index/_service';
 @import './index/_article';
 
-.banner-container,
-.works-container,
-.service-container,
-.articles {
-    max-width: 1920px;
-    margin: $spacer-0 $spacer-auto;
+@include index-wrapper {
+
+    .banner-container,
+    .works-container,
+    .service-container,
+    .articles {
+        max-width: 1920px;
+        margin: $spacer-0 $spacer-auto;
+    }
 }

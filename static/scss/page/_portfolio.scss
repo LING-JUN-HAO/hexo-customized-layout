@@ -1,0 +1,141 @@
+@include portfolio-wrapper {
+    .banner-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: $additionalLightGray;
+        padding: $spacer-20 $spacer-0;
+        gap: $spacer-6;
+
+        .main-title {
+            position: relative;
+            padding: 59px 71px;
+            max-width: 670px;
+            color: $darkestGray;
+            text-align: center;
+
+            .down-comma,
+            .top-comma {
+                position: absolute;
+                width: 72px;
+                height: 72px;
+            }
+
+            .down-comma {
+                top: 0;
+                left: 1px;
+            }
+
+            .top-comma {
+                bottom: 0;
+                right: 1px;
+            }
+
+            .main-title-content {
+                position: relative;
+
+                &:nth-of-type(1) {
+                    margin-bottom: $spacer-4;
+                }
+            }
+
+            .mark {
+                position: relative;
+                display: inline-block;
+                z-index: 1;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url('../img/mark.png');
+                    width: 148px;
+                    height: 8px;
+                    bottom: 0;
+                    z-index: -1;
+                }
+            }
+
+            .mark-section1::after {
+                right: -$spacer-4;
+            }
+
+            .mark-section2::after {
+                right: -$spacer-5;
+            }
+
+
+
+        }
+
+        .sub-title {
+            display: flex;
+            gap: $spacer-10;
+            max-width: 636px;
+
+            .sub-title-box {
+                text-align: center;
+
+                h3 {
+                    position: relative;
+                    color: #5B5B5B;
+                    margin-bottom: $spacer-3;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: -4px;
+                        width: 24px;
+                        height: 2px;
+                        background-color: $lightGray;
+                        margin: $spacer-0 $spacer-auto;
+                    }
+                }
+
+                p {
+                    color: #3B3B3B;
+                }
+            }
+        }
+    }
+
+    .work-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacer-6;
+        max-width: 1296px;
+        margin: $spacer-0 $spacer-auto;
+
+        .work-img{
+            border-radius: $spacer-2;
+        }
+
+        .content{
+            padding-top: $spacer-4;
+
+            .work-title{
+                @include work-lg;
+                color: #3B3B3B;
+                padding-bottom: $spacer-2;
+            }
+
+            p{
+                color: $gray;
+            }
+
+            .tag-group{
+                margin-top: $spacer-6;
+                display: flex;
+                gap: $spacer-4;
+
+                .tag{
+                    background-color: $backgroundDark100;
+                    padding: $spacer-1 $spacer-3;
+                    border-radius: 1rem;
+                    color: $darkGray;
+                }
+            }
+        }
+    }
+}
