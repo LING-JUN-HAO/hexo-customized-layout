@@ -1,0 +1,9 @@
+@include index-wrapper {
+    .articles {
+        padding-bottom: $spacer-30;
+    
+        @include container-lg{
+            padding-bottom: $spacer-20;
+        }
+    }
+}

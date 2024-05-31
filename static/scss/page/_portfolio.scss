@@ -1,0 +1,267 @@
+@include portfolio-wrapper {
+    .banner-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: $additionalLightGray;
+        padding: $spacer-20 $spacer-0;
+        gap: $spacer-6;
+
+        @include container-lg {
+            padding: $spacer-10 $spacer-6;
+        }
+
+        .main-title {
+            position: relative;
+            padding: 59px 71px;
+            max-width: 670px;
+            color: $darkestGray;
+            text-align: center;
+
+            @include container-lg {
+                max-width: 300px;
+                padding: $spacer-16 $spacer-0 $spacer-10 $spacer-0;
+            }
+
+            .down-comma,
+            .top-comma {
+                position: absolute;
+                width: 72px;
+                height: 72px;
+
+                @include container-lg {
+                    text-align: center;
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+
+            .down-comma {
+                top: 0;
+                left: 1px;
+
+                @include container-lg {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .top-comma {
+                bottom: 0;
+                right: 1px;
+
+                @include container-lg {
+                    display: none;
+                }
+            }
+
+
+            .main-title-content {
+                position: relative;
+
+                @include container-lg {
+                    @include fs-5;
+                }
+
+                &:nth-of-type(1) {
+                    margin-bottom: $spacer-4;
+
+                    @include container-lg {
+                        margin-bottom: $spacer-2;
+                    }
+                }
+            }
+
+            .mark {
+                position: relative;
+                display: inline-block;
+                z-index: 1;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url('../img/mark.png');
+                    width: 148px;
+                    height: 8px;
+                    bottom: 2px;
+                    z-index: -1;
+                    background-repeat: round;
+
+                    @include container-lg {
+                        width: 108px;
+                        height: 6px;
+                        bottom: 3px;
+                    }
+                }
+            }
+
+            .mark-section1::after {
+                right: -$spacer-4;
+
+                @include container-lg {
+                    right: 0px;
+                }
+            }
+
+            .mark-section2::after {
+                right: -$spacer-5;
+
+                @include container-lg {
+                    right: 0px;
+                }
+            }
+
+
+
+        }
+
+        .sub-title {
+            display: flex;
+            gap: $spacer-10;
+            max-width: 636px;
+
+            @include container-lg {
+                max-width: 235px;
+                gap: $spacer-5;
+                flex-direction: column;
+                padding-bottom: $spacer-10;
+                @include fs-6;
+            }
+
+            .sub-title-box {
+                text-align: center;
+
+                h3 {
+                    position: relative;
+                    color: #5B5B5B;
+                    margin-bottom: $spacer-3;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: -4px;
+                        width: 24px;
+                        height: 2px;
+                        background-color: $lightGray;
+                        margin: $spacer-0 $spacer-auto;
+                    }
+                }
+
+                p {
+                    color: #3B3B3B;
+                }
+            }
+        }
+    }
+
+    .works-container {
+        padding: $spacer-30 $spacer-0;
+
+        @include container-contentWidth {
+            padding: $spacer-20 $spacer-4;
+        }
+
+        @include container-lg {
+            padding: $spacer-20 $spacer-0;
+        }
+
+        .pagination,
+        .work-list {
+            max-width: 1296px;
+            margin: $spacer-0 $spacer-auto;
+        }
+
+        .work-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: $spacer-6;
+
+            @include container-lg {
+                gap: $spacer-12;
+                width: 351px;
+            }
+
+            .work {
+
+                @include container-contentWidth{
+                    width: calc(50% - 1rem);
+                }
+
+                @include container-lg{
+                    width: auto;
+                }
+
+                .work-img {
+                    border-radius: $spacer-2;
+                }
+
+                .content {
+                    padding-top: $spacer-4;
+                    padding: $spacer-4 $spacer-0 $spacer-0 $spacer-4;
+
+                    .work-title {
+                        @include work-lg;
+                        color: #3B3B3B;
+                        padding-bottom: $spacer-2;
+
+                        @include container-lg {
+                            @include work-sm;
+                        }
+                    }
+
+                    p {
+                        color: $gray;
+                    }
+
+                    .tag-group {
+                        margin-top: $spacer-6;
+                        display: flex;
+                        gap: $spacer-4;
+
+                        @include container-lg {
+                            margin-top: $spacer-4;
+                            gap: $spacer-2;
+                        }
+
+                        .tag {
+                            background-color: $backgroundDark100;
+                            padding: $spacer-1 $spacer-3;
+                            border-radius: 1rem;
+                            color: $darkGray;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: $spacer-4;
+            padding-top: $spacer-18;
+
+            @include container-lg {
+                padding-top: $spacer-12;
+            }
+
+            .page {
+                padding: 2px 13px;
+                border-radius: 4px;
+
+                a {
+                    color: $darkGray;
+                }
+            }
+
+            .page.active {
+                background-color: $darkestGray;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

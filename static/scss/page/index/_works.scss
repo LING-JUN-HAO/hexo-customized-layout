@@ -1,0 +1,222 @@
+@include index-wrapper {
+    .works-container {
+        .title-container {
+            @include container-lg {
+                padding-top: $spacer-10;
+            }
+        }
+
+        .card-group {
+            display: flex;
+            flex-direction: column;
+
+            .card {
+                height: 800px;
+
+                @include container-lg {
+                    height: auto;
+                }
+
+                .card-box {
+                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    max-width: 1296px;
+                    margin: $spacer-0 $spacer-auto;
+
+                    @include container-contentWidth {
+                        margin: $spacer-0 $spacer-4;
+                    }
+
+                    @include container-lg {
+                        height: 390px;
+                        justify-content: center;
+                    }
+
+                    .content-lg {
+                        padding: 80px 40px 56px 40px;
+                        border-radius: 1.5rem;
+                        background-color: #FFFFFF1A;
+                        max-height: 400px;
+                        width: 526px;
+                        margin: $spacer-auto $spacer-0;
+                        backdrop-filter: blur(3px);
+
+                        @include container-lg {
+                            display: none;
+                        }
+
+                        .sub-title {
+                            font-weight: $fw-700;
+                            font-size: $spacer-7;
+                            line-height: $lh-2;
+                            color: $white;
+                            padding-bottom: $spacer-2;
+                        }
+
+                        p {
+                            line-height: $lh-3;
+                            color: $white;
+                            padding-bottom: $spacer-6;
+                        }
+
+                        .tag-container {
+                            display: flex;
+                            gap: $spacer-4;
+                            border-bottom: 1px solid $backgroundDark100;
+                            padding-bottom: $spacer-10;
+
+                            .tag-item {
+                                padding: $spacer-1 $spacer-3;
+                                border-radius: 1rem;
+                                background-color: $white;
+                                color: $darkGray;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-sm {
+                display: none;
+                flex-direction: column;
+                position: relative;
+                padding: $spacer-6 $spacer-6 $spacer-12 $spacer-6;
+                background-color: $white;
+                text-align: center;
+
+
+                @include container-lg {
+                    display: flex;
+                }
+
+                .sub-title {
+                    color: $darkestGray;
+                    font-weight: $fw-700;
+                    font-size: $spacer-5;
+                    line-height: $lh-2;
+                    padding-bottom: $spacer-2
+                }
+
+                p {
+                    @include fs-6;
+                    color: $mediumGray;
+                }
+
+                .tag-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: $spacer-2;
+                    padding-top: $spacer-4;
+
+                    .tag-item {
+                        padding: $spacer-1 $spacer-3;
+                        background-color: $backgroundDark100;
+                        border-radius: 1rem;
+                    }
+                }
+
+            }
+
+            .travel,
+            .finance,
+            .aesthetics {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: $customGray;
+                }
+            }
+
+            .travel {
+                background-image: url('../img/homepage-work1-bg.png');
+
+                &::before {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .bg {
+                    width: 55.633%;
+
+                    @include container-lg {
+                        width: 100%;
+                        max-width: 295px;
+                        max-height: 370px;
+                    }
+                }
+            }
+
+            .finance {
+                background-image: url('../img/homepage-work2-lg.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+
+
+                @include container-lg {
+                    background-image: none;
+                }
+
+                &::before {
+                    width: 49.375%;
+                    height: 100%;
+
+                    @include container-lg {
+                        background-color: transparent;
+                    }
+                }
+
+                .card-box {
+                    width: 49.375%;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+
+                    @media (max-width: 992px) {
+                        height: 390px;
+                        width: 100%;
+                        background-image: url('../img/homepage-work2-sm.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    .content {
+                        margin: $spacer-0 $spacer-4;
+                        flex: 1;
+                    }
+                }
+            }
+
+            .aesthetics {
+                background-image: url('../img/homepage-work3-bg.png');
+
+                .content-sm {
+                    @include container-lg {
+                        padding-bottom: $spacer-20;
+                    }
+                }
+
+
+                &::before {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .bg {
+                    margin: auto 0;
+                    width: 55.633%;
+
+                    @include container-lg {
+                        width: 100%;
+                        height: auto;
+                        max-width: 295px;
+                    }
+                }
+            }
+        }
+    }
+}

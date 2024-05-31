@@ -1,0 +1,60 @@
+
+// 間距大小 (Spacing)
+$spacer-0: 0rem;     // 無間距
+$spacer-1: .25rem;   // 4px (0.25 * 16px)
+$spacer-2: .5rem;    // 8px (0.5 * 16px)
+$spacer-3: .75rem;   // 12px (0.75 * 16px)
+$spacer-4: 1rem;     // 16px (1 * 16px)
+$spacer-5: 1.25rem;  // 20px (1.25 * 16px)
+$spacer-6: 1.5rem;   // 24px (1.5 * 16px)
+$spacer-7: 1.75rem;  // 28px (1.75 * 16px)
+$spacer-8: 2rem;     // 32px (2 * 16px)
+$spacer-9: 2.25rem;  // 36px (2.25 * 16px)
+$spacer-10: 2.5rem;  // 40px (2.5 * 16px)
+$spacer-12: 3rem;    // 48px (3 * 16px)
+$spacer-15: 3.75rem; // 60px (3.75 * 16px)
+$spacer-16: 4rem; // 64px (4 * 16px)
+$spacer-18: 4.5rem;  // 72px (4.5 * 16px)
+$spacer-20: 5rem;    // 80px (5 * 16px)
+$spacer-30: 7.5rem;  // 120px (7.5 * 16px)
+$spacer-auto: auto;  // 自動間距
+
+
+// 字體大小 (Font Sizes)
+$fs-1: 2.5rem;  /* 40px (2.5 * 16px) */
+$fs-2: 2rem;    /* 32px (2 * 16px) */
+$fs-3: 1.75rem; /* 28px (1.75 * 16px) */
+$fs-4: 1.5rem;  /* 24px (1.5 * 16px) */
+$fs-5: 1.25rem; /* 20px (1.25 * 16px) */
+$fs-6: 1rem;    /* 16px (1 * 16px) */
+
+// 字重 (Font Weights)
+$fw-100: 100;   // Ultra Light
+$fw-200: 200;   // Extra Light
+$fw-300: 300;   // Light
+$fw-400: 400;   // Normal (等同於 normal)
+$fw-500: 500;   // Medium
+$fw-600: 600;   // Semi Bold
+$fw-700: 700;   // Bold (等同於 bold)
+$fw-800: 800;   // Extra Bold
+$fw-900: 900;   // Black
+
+// 行高 (Line Heights)
+$lh-1: 1;      // 1 (標準行高，等於字體大小)
+$lh-2: 1.2;   // 1.2 (字體大小的 120%)
+$lh-3: 1.5;    // 1.5 (字體大小的 150%)
+
+// 顏色 (Colors)
+$backgroundDark100: #F1F1F1;
+$gray: #919191;
+$lightGray: #C1C1C1;
+$extraLightGray: #DDD;
+$mediumGray: #5B5B5B;
+$darkGray: #3B3B3B;
+$lighterGray: #E9E9E9;
+$darkestGray: #1E1E1E;
+$customGray: #0A101380;
+$white: #FFFFFF;
+$black: #000000;
+$additionalLightGray: #FAFAFA;
+

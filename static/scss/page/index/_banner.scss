@@ -1,0 +1,138 @@
+@include index-wrapper {
+    .banner-container {
+        display: flex;
+    
+        @include container-lg{
+            flex-direction: column;
+        }
+    
+        .content {
+            width: 39.896%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: $spacer-6;
+    
+            @include container-lg{
+                width: 100%;
+                padding: 40px 53.5px;
+                order: 2;
+            }
+    
+            .box {
+                max-width: 430px;
+                margin-left: $spacer-4;
+                flex: 1;
+    
+                @include container-lg{
+                    text-align: center;
+                    margin: auto;
+                }
+    
+                .next-line {
+                    @include container-lg{
+                        display: inline-block;
+                    }
+                }
+    
+                .banner-title {
+                    font-size: $spacer-10;
+                    font-weight: $fw-600;
+                    line-height: $lh-2;
+                    padding-bottom: $spacer-6;
+                    color: $darkGray;
+    
+                    @include container-lg{
+                        font-weight: $fw-700;
+                        font-size: $fs-2;
+                    }
+                }
+    
+                p {
+                    color: $mediumGray;
+                }
+    
+                &>p:nth-of-type(1) {
+                    padding-bottom: $spacer-2;
+                }
+    
+                .skill {
+                    padding-top: $spacer-4;
+                    color: $lightGray;
+                }
+    
+                .social-container {
+                    display: flex;
+                    gap: $spacer-4;
+                    padding-top: $spacer-15;
+    
+                    img {
+                        @include container-lg{
+                            height: 40px;
+                            width: 40px;
+                        }
+                    }
+    
+                    @include container-lg{
+                        padding-top: $spacer-6;
+                        justify-content: center;
+                    }
+                }
+    
+                .mark-section1,
+                .mark-section2 {
+                    display: inline-block;
+                    position: relative;
+    
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 2px;
+                        left: 0;
+                        background-image: url('../img/mark.png');
+                        background-repeat: round;
+                        height: .5rem;
+                        z-index: -1;
+                    }
+                }
+    
+                .mark-section1 {
+                    padding: $spacer-0 $spacer-2;
+    
+    
+                    @include container-lg{
+                        padding: $spacer-0 $spacer-2 $spacer-0 $spacer-0;
+                    }
+    
+                    &::after {
+                        width: 148px;
+                    }
+                }
+    
+                .mark-section2 {
+                    padding-left: $spacer-2;
+    
+                    &::after {
+                        width: 119px;
+                    }
+                }
+            }
+        }
+    
+    
+        .bg {
+            width: 60.104%;
+    
+            img {
+                @include container-lg{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+    
+            @include container-lg{
+                width: 100%;
+            }
+        }
+    }
+}
