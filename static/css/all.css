@@ -285,6 +285,11 @@ img {
   line-height: 1.2;
 }
 
+.fs-4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
 .fs-5 {
   font-size: 1.25rem;
   line-height: 1.5;
@@ -1114,6 +1119,11 @@ img {
   padding: 5rem 0rem;
   gap: 1.5rem;
 }
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container {
+    padding: 2.5rem 1.5rem;
+  }
+}
 .portfolio-wrapper .banner-container .main-title {
   position: relative;
   padding: 59px 71px;
@@ -1121,25 +1131,61 @@ img {
   color: #1E1E1E;
   text-align: center;
 }
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container .main-title {
+    max-width: 300px;
+    padding: 4rem 0rem 2.5rem 0rem;
+  }
+}
 .portfolio-wrapper .banner-container .main-title .down-comma,
 .portfolio-wrapper .banner-container .main-title .top-comma {
   position: absolute;
   width: 72px;
   height: 72px;
 }
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container .main-title .down-comma,
+  .portfolio-wrapper .banner-container .main-title .top-comma {
+    text-align: center;
+    width: 64px;
+    height: 64px;
+  }
+}
 .portfolio-wrapper .banner-container .main-title .down-comma {
   top: 0;
   left: 1px;
+}
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container .main-title .down-comma {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .portfolio-wrapper .banner-container .main-title .top-comma {
   bottom: 0;
   right: 1px;
 }
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container .main-title .top-comma {
+    display: none;
+  }
+}
 .portfolio-wrapper .banner-container .main-title .main-title-content {
   position: relative;
 }
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container .main-title .main-title-content {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
 .portfolio-wrapper .banner-container .main-title .main-title-content:nth-of-type(1) {
   margin-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container .main-title .main-title-content:nth-of-type(1) {
+    margin-bottom: 0.5rem;
+  }
 }
 .portfolio-wrapper .banner-container .main-title .mark {
   position: relative;
@@ -1152,19 +1198,47 @@ img {
   background-image: url("../img/mark.png");
   width: 148px;
   height: 8px;
-  bottom: 0;
+  bottom: 2px;
   z-index: -1;
+  background-repeat: round;
+}
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container .main-title .mark::after {
+    width: 108px;
+    height: 6px;
+    bottom: 3px;
+  }
 }
 .portfolio-wrapper .banner-container .main-title .mark-section1::after {
   right: -1rem;
 }
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container .main-title .mark-section1::after {
+    right: 0px;
+  }
+}
 .portfolio-wrapper .banner-container .main-title .mark-section2::after {
   right: -1.25rem;
+}
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container .main-title .mark-section2::after {
+    right: 0px;
+  }
 }
 .portfolio-wrapper .banner-container .sub-title {
   display: flex;
   gap: 2.5rem;
   max-width: 636px;
+}
+@media (max-width: 992px) {
+  .portfolio-wrapper .banner-container .sub-title {
+    max-width: 235px;
+    gap: 1.25rem;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
 .portfolio-wrapper .banner-container .sub-title .sub-title-box {
   text-align: center;
@@ -1188,39 +1262,109 @@ img {
 .portfolio-wrapper .banner-container .sub-title .sub-title-box p {
   color: #3B3B3B;
 }
-.portfolio-wrapper .work-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+.portfolio-wrapper .works-container {
+  padding: 7.5rem 0rem;
+}
+@media (max-width: 1296px) {
+  .portfolio-wrapper .works-container {
+    padding: 5rem 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .portfolio-wrapper .works-container {
+    padding: 5rem 0rem;
+  }
+}
+.portfolio-wrapper .works-container .pagination,
+.portfolio-wrapper .works-container .work-list {
   max-width: 1296px;
   margin: 0rem auto;
 }
-.portfolio-wrapper .work-list .work-img {
+.portfolio-wrapper .works-container .work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+@media (max-width: 992px) {
+  .portfolio-wrapper .works-container .work-list {
+    gap: 3rem;
+    width: 351px;
+  }
+}
+@media (max-width: 1296px) {
+  .portfolio-wrapper .works-container .work-list .work {
+    width: calc(50% - 1rem);
+  }
+}
+@media (max-width: 992px) {
+  .portfolio-wrapper .works-container .work-list .work {
+    width: auto;
+  }
+}
+.portfolio-wrapper .works-container .work-list .work .work-img {
   border-radius: 0.5rem;
 }
-.portfolio-wrapper .work-list .content {
+.portfolio-wrapper .works-container .work-list .work .content {
   padding-top: 1rem;
+  padding: 1rem 0rem 0rem 1rem;
 }
-.portfolio-wrapper .work-list .content .work-title {
+.portfolio-wrapper .works-container .work-list .work .content .work-title {
   font-weight: 700;
   font-size: 1.75rem;
   line-height: 1.2;
   color: #3B3B3B;
   padding-bottom: 0.5rem;
 }
-.portfolio-wrapper .work-list .content p {
+@media (max-width: 992px) {
+  .portfolio-wrapper .works-container .work-list .work .content .work-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+}
+.portfolio-wrapper .works-container .work-list .work .content p {
   color: #919191;
 }
-.portfolio-wrapper .work-list .content .tag-group {
+.portfolio-wrapper .works-container .work-list .work .content .tag-group {
   margin-top: 1.5rem;
   display: flex;
   gap: 1rem;
 }
-.portfolio-wrapper .work-list .content .tag-group .tag {
+@media (max-width: 992px) {
+  .portfolio-wrapper .works-container .work-list .work .content .tag-group {
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+}
+.portfolio-wrapper .works-container .work-list .work .content .tag-group .tag {
   background-color: #F1F1F1;
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
   color: #3B3B3B;
+}
+.portfolio-wrapper .works-container .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 4.5rem;
+}
+@media (max-width: 992px) {
+  .portfolio-wrapper .works-container .pagination {
+    padding-top: 3rem;
+  }
+}
+.portfolio-wrapper .works-container .pagination .page {
+  padding: 2px 13px;
+  border-radius: 4px;
+}
+.portfolio-wrapper .works-container .pagination .page a {
+  color: #3B3B3B;
+}
+.portfolio-wrapper .works-container .pagination .page.active {
+  background-color: #1E1E1E;
+}
+.portfolio-wrapper .works-container .pagination .page.active a {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=all.css.map */
