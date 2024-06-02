@@ -16,3 +16,11 @@ $('.pagination .page a').click(function(e){
   $('.pagination .page').removeClass('active');
   $(this).parent().addClass('active');
 });
+
+function overlayOpen () {
+  $('body').addClass('overlay');
+}
+
+function overlayClose () {
+  $('body').removeClass('overlay');
+}
