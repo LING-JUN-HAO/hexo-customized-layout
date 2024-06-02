@@ -5,8 +5,14 @@ $('.navbar-btn ').click(function () {
   $('.nav-list').toggleClass('active');
 
   if ($('.nav-list').hasClass('active')) {
-    $('body').addClass('overlay');
+    overlayOpen()
   } else {
-    $('body').removeClass('overlay');
+    overlayClose()
   }
 })
+
+$('.pagination .page a').click(function(e){
+  e.preventDefault();
+  $('.pagination .page').removeClass('active');
+  $(this).parent().addClass('active');
+});
