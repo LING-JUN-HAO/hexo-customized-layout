@@ -1,7 +1,7 @@
-$(document).ready(function() {
-  const currentPath = window.location.pathname.split("/").pop();;
+$(function() {
+  const currentPath = window.location.pathname.split("/").pop();
   $('.nav-list .nav-link').each(function() {
-      const linkPath = $(this).attr('href').split("/").pop();;
+      const linkPath = $(this).attr('href').split("/").pop();
       if (currentPath === linkPath) {
           $(this).parent().addClass('active');
       }
@@ -9,10 +9,9 @@ $(document).ready(function() {
 });
 
 $('.navbar-btn ').click(function () {
-  $('.navbar-btn').toggleClass('active');
-  $('.menu').toggleClass('close');
-  $('.closure').toggleClass('close');
-  $('.nav-list').toggleClass('active');
+  const $this = $(this);
+  $this.toggleClass('active');
+  $('.menu, .closure, .nav-list').toggleClass('close active');
 
   if ($('.nav-list').hasClass('active')) {
     overlayOpen();
@@ -21,8 +20,9 @@ $('.navbar-btn ').click(function () {
   }
 })
 
-$('.nav-list .nav-item a').click(function(e){
-  $('.nav-list .nav-item').removeClass('active');
+$('.pagination .page  a').click(function(e){
+  e.preventDefault()
+  $('.pagination .page').removeClass('active');
   $(this).parent().addClass('active');
 });
 

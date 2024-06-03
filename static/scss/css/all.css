@@ -5,7 +5,6 @@
 /* 20px (1.25 * 16px) */
 /* 16px (1 * 16px) */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
 .swiper {
   max-width: 1296px;
   height: 398px;
@@ -1367,102 +1366,6 @@ img {
 }
 .portfolio-wrapper .works-container .pagination .page.active a {
   color: #FFFFFF;
-}
-
-.service-wrapper .service-group {
-  padding-bottom: 7.5rem;
-}
-.service-wrapper .service-process-container {
-  background: linear-gradient(315deg, #1E1E1E 0%, #1E1E1E 49.97%, #000000 50%);
-}
-.service-wrapper .service-process-container .title {
-  color: #FFFFFF;
-}
-.service-wrapper .service-process-container .service-process-box .service-process-group {
-  display: flex;
-  gap: 4rem;
-  flex-direction: column;
-  max-width: 657px;
-  margin: 0rem auto;
-  padding-bottom: 7.5rem;
-}
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  color: #3B3B3B;
-  border: 1px solid #919191;
-  border-radius: 4px;
-}
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card .num {
-  font-family: "Tourney";
-  font-size: 72px;
-  line-height: 1.2;
-  padding-right: 2rem;
-  color: #919191;
-}
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card .content h4 {
-  font-weight: 700;
-  font-size: 1.75rem;
-  line-height: 1.2;
-  padding-bottom: 0.5rem;
-  color: #FFFFFF;
-}
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card .content .new-line {
-  display: inline-block;
-}
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card .content p {
-  color: #E9E9E9;
-}
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card .service-card-icon {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -48px;
-  color: #5B5B5B;
-}
-.service-wrapper .price-card-group {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  max-width: 1296px;
-  margin: 0rem auto;
-  padding-bottom: 7.5rem;
-}
-.service-wrapper .price-card-group .price-card {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  background-color: #FAFAFA;
-  border-radius: 0.5rem;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.0784313725);
-}
-.service-wrapper .price-card-group .price-card .icon {
-  padding-right: 0.5rem;
-}
-.service-wrapper .price-card-group .price-card h4 {
-  display: flex;
-  justify-content: space-between;
-  width: calc(100% - 64px);
-}
-.service-wrapper .price-card-group .price-card h4 .sub-title {
-  font-weight: 600;
-  font-size: 1.75rem;
-  line-height: 1.5;
-  color: #5B5B5B;
-}
-.service-wrapper .price-card-group .price-card h4 .price-num {
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.5;
-  color: #1E1E1E;
-}
-.service-wrapper .price-card-group .price-card h4 .unit {
-  color: #5B5B5B;
-  font-weight: 400;
-  padding-left: 0.5rem;
 }
 
 /*# sourceMappingURL=all.css.map */

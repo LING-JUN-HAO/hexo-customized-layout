@@ -98,3 +98,9 @@
         @content;
     }
 }
+
+@mixin service-wrapper {
+    .service-wrapper {
+        @content;
+    }
+}
