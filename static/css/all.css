@@ -1369,24 +1369,24 @@ img {
   color: #FFFFFF;
 }
 
-.service-wrapper .service-group {
+.service-wrapper .service-item-container {
   padding-bottom: 7.5rem;
 }
 .service-wrapper .service-process-container {
   background: linear-gradient(315deg, #1E1E1E 0%, #1E1E1E 49.97%, #000000 50%);
+  padding-bottom: 7.5rem;
 }
 .service-wrapper .service-process-container .title {
   color: #FFFFFF;
 }
-.service-wrapper .service-process-container .service-process-box .service-process-group {
+.service-wrapper .service-process-container .service-process-group {
   display: flex;
   gap: 4rem;
   flex-direction: column;
   max-width: 657px;
   margin: 0rem auto;
-  padding-bottom: 7.5rem;
 }
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card {
+.service-wrapper .service-process-container .service-process-group .service-card {
   position: relative;
   display: flex;
   align-items: center;
@@ -1395,42 +1395,44 @@ img {
   border: 1px solid #919191;
   border-radius: 4px;
 }
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card .num {
+.service-wrapper .service-process-container .service-process-group .service-card .num {
   font-family: "Tourney";
   font-size: 72px;
   line-height: 1.2;
   padding-right: 2rem;
   color: #919191;
 }
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card .content h4 {
+.service-wrapper .service-process-container .service-process-group .service-card .content h4 {
   font-weight: 700;
   font-size: 1.75rem;
   line-height: 1.2;
   padding-bottom: 0.5rem;
   color: #FFFFFF;
 }
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card .content .new-line {
+.service-wrapper .service-process-container .service-process-group .service-card .content .new-line {
   display: inline-block;
 }
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card .content p {
+.service-wrapper .service-process-container .service-process-group .service-card .content p {
   color: #E9E9E9;
 }
-.service-wrapper .service-process-container .service-process-box .service-process-group .service-card .service-card-icon {
+.service-wrapper .service-process-container .service-process-group .service-card .service-card-icon {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: -48px;
   color: #5B5B5B;
 }
-.service-wrapper .price-card-group {
+.service-wrapper .price-container {
+  padding-bottom: 7.5rem;
+}
+.service-wrapper .price-container .price-card-group {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   max-width: 1296px;
   margin: 0rem auto;
-  padding-bottom: 7.5rem;
 }
-.service-wrapper .price-card-group .price-card {
+.service-wrapper .price-container .price-card-group .price-card {
   flex: 1;
   display: flex;
   align-items: center;
@@ -1439,30 +1441,54 @@ img {
   border-radius: 0.5rem;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.0784313725);
 }
-.service-wrapper .price-card-group .price-card .icon {
+.service-wrapper .price-container .price-card-group .price-card .icon {
   padding-right: 0.5rem;
 }
-.service-wrapper .price-card-group .price-card h4 {
+.service-wrapper .price-container .price-card-group .price-card h4 {
   display: flex;
-  justify-content: space-between;
   width: calc(100% - 64px);
 }
-.service-wrapper .price-card-group .price-card h4 .sub-title {
+.service-wrapper .price-container .price-card-group .price-card h4 .sub-title {
+  position: relative;
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 1.5;
   color: #5B5B5B;
 }
-.service-wrapper .price-card-group .price-card h4 .price-num {
+.service-wrapper .price-container .price-card-group .price-card h4 .sub-title::after {
+  position: absolute;
+  content: "";
+  left: 128px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 1px;
+  background-color: #C1C1C1;
+}
+.service-wrapper .price-container .price-card-group .price-card h4 .price-group {
+  margin-left: auto;
+}
+.service-wrapper .price-container .price-card-group .price-card h4 .price-group .price-num {
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.5;
   color: #1E1E1E;
 }
-.service-wrapper .price-card-group .price-card h4 .unit {
+.service-wrapper .price-container .price-card-group .price-card h4 .price-group .unit {
   color: #5B5B5B;
   font-weight: 400;
   padding-left: 0.5rem;
+}
+.service-wrapper .price-container .price-card-group .price-card:nth-child(1) .sub-title::after {
+  width: 34.133px;
+}
+.service-wrapper .price-container .price-card-group .price-card:nth-child(2) .sub-title::after {
+  width: 35.266px;
+  left: 108px;
+}
+.service-wrapper .price-container .price-card-group .price-card:nth-child(3) .sub-title::after {
+  width: 15.266px;
 }
 
 /*# sourceMappingURL=all.css.map */
