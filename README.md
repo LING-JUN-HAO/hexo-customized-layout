@@ -12,6 +12,9 @@ Demo Website：<https://ling-jun-hao.github.io/hexo-customized-layout/index.html
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
+* 使用 Sass 7-1 Pattern 建構響應式版型。
+* 使用 jQuery 完成頁面點擊效果樣式切換及 Swiper 套件控制。
+
 ## 使用套件
 
-* swiper 輪播功能。
+* Swiper 輪播功能。
