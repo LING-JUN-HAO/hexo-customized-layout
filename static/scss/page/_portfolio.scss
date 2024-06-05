@@ -167,80 +167,13 @@
             padding: $spacer-20 $spacer-0;
         }
     
-        .pagination,
-        .work-list {
-            max-width: 1296px;
-            margin: $spacer-0 $spacer-auto;
-        }
-    
-        .work-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: $spacer-6;
-    
-            @include container-lg {
-                gap: $spacer-12;
-                width: 351px;
-            }
-    
-            .work {
-    
-                @include container-contentWidth{
-                    width: calc(50% - 1rem);
-                }
-    
-                @include container-lg{
-                    width: auto;
-                }
-    
-                .work-img {
-                    border-radius: $spacer-2;
-                }
-    
-                .content {
-                    padding-top: $spacer-4;
-                    padding: $spacer-4 $spacer-0 $spacer-0 $spacer-4;
-    
-                    .work-title {
-                        @include work-lg;
-                        color: #3B3B3B;
-                        padding-bottom: $spacer-2;
-    
-                        @include container-lg {
-                            @include work-sm;
-                        }
-                    }
-    
-                    p {
-                        color: $gray;
-                    }
-    
-                    .tag-group {
-                        margin-top: $spacer-6;
-                        display: flex;
-                        gap: $spacer-4;
-    
-                        @include container-lg {
-                            margin-top: $spacer-4;
-                            gap: $spacer-2;
-                        }
-    
-                        .tag {
-                            background-color: $backgroundDark100;
-                            padding: $spacer-1 $spacer-3;
-                            border-radius: 1rem;
-                            color: $darkGray;
-                        }
-                    }
-                }
-            }
-        }
-    
         .pagination {
             display: flex;
             justify-content: center;
             gap: $spacer-4;
             padding-top: $spacer-18;
+            max-width: 1296px;
+            margin: $spacer-0 $spacer-auto;
     
             @include container-lg {
                 padding-top: $spacer-12;
