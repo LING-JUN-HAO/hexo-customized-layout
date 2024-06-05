@@ -1520,6 +1520,11 @@ img {
   align-items: center;
   width: calc(100% - 64px);
 }
+@media (max-width: 992px) {
+  .service-wrapper .price-card-group .price-card h4 {
+    width: calc(100% - 48px);
+  }
+}
 .service-wrapper .price-card-group .price-card h4 .sub-title {
   position: relative;
   font-weight: 600;
