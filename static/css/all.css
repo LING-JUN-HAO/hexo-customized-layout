@@ -759,6 +759,9 @@ img {
     width: 351px;
   }
 }
+.work-group .work {
+  cursor: pointer;
+}
 @media (max-width: 1296px) {
   .work-group .work {
     width: calc(50% - 1rem);
@@ -1489,7 +1492,7 @@ img {
     flex-direction: column;
   }
 }
-.service-wrapper .price-container .price-card-group .price-card {
+.service-wrapper .price-card-group .price-card {
   flex: 1;
   display: flex;
   align-items: center;
