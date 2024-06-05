@@ -148,6 +148,10 @@
                 align-items: center;
                 width: calc(100% - 64px);
 
+                @include container-lg{
+                    width: calc(100% - 48px);
+                }
+
                 .sub-title {
                     position: relative;
                     font-weight: $fw-600;
