@@ -50,6 +50,7 @@
                         height: 220px;
                         flex-shrink: 0;
                         border: 1px solid $backgroundDark100;
+                        border-radius: .5rem;
                         margin-right: $spacer-4;
 
                         @include container-lg {
