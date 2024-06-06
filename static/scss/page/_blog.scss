@@ -18,6 +18,10 @@
             display: flex;
             gap: 1.5rem;
 
+            @include container-contentWidth{
+                padding: $spacer-0 $spacer-4;
+            }
+
             @include container-lg {
                 flex-direction: column-reverse;
                 gap: 2.5rem;
