@@ -1664,6 +1664,7 @@ img {
   height: 220px;
   flex-shrink: 0;
   border: 1px solid #F1F1F1;
+  border-radius: 0.5rem;
   margin-right: 1rem;
 }
 @media (max-width: 992px) {
