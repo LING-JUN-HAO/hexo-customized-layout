@@ -139,6 +139,7 @@
                 background-color: $additionalLightGray;
                 flex-shrink: 0;
                 padding: $spacer-20;
+                border-radius: .5rem;
 
                 @include container-lg {
                     width: 100%;
