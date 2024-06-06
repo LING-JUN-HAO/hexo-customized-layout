@@ -1,0 +1,186 @@
+@include blog-wrapper {
+    .blog-container {
+        padding-bottom: $spacer-30;
+
+        .title-container {
+            flex-direction: column;
+            gap: $spacer-6;
+            align-items: center;
+
+            .sub-title {
+                color: $gray;
+            }
+        }
+
+        .article-box {
+            max-width: 1296px;
+            margin: $spacer-0 $spacer-auto;
+            display: flex;
+            gap: 1.5rem;
+
+            @include container-lg {
+                flex-direction: column-reverse;
+                gap: 2.5rem;
+            }
+
+            .article-content-group {
+                display: flex;
+                flex-direction: column;
+                gap: $spacer-16;
+
+                @include container-lg {
+                    max-width: 306px;
+                    margin: $spacer-0 $spacer-auto;
+                    gap: $spacer-10;
+                }
+
+                .card {
+                    display: flex;
+
+                    @include container-lg {
+                        flex-direction: column;
+                    }
+
+                    .bg {
+                        width: 306px;
+                        height: 220px;
+                        flex-shrink: 0;
+                        border: 1px solid $backgroundDark100;
+                        margin-right: $spacer-4;
+
+                        @include container-lg {
+                            margin-right: 0;
+                            margin-bottom: $spacer-4;
+                        }
+
+                        img {
+                            border-radius: .5rem;
+                        }
+                    }
+
+                    .card-content {
+
+                        @include container-lg {
+                            padding: $spacer-0 $spacer-2;
+                        }
+
+                        .card-info {
+
+                            @include container-lg{
+                                display: flex;
+                            }
+
+                            .date {
+                                color: $mediumGray;
+                            }
+
+                            .tag {
+                                display: inline-block;
+                                margin-left: 1rem;
+                                padding: $spacer-1 $spacer-3;
+                                background-color: $backgroundDark100;
+                                border-radius: 1rem;
+                                color: $darkGray;
+
+                                @include container-lg {
+                                    margin-left: auto;
+                                }
+                            }
+                        }
+
+                        .card-title,
+                        p {
+                            color: $darkGray;
+                        }
+
+                        .card-title {
+                            padding: $spacer-4 $spacer-0;
+                            font-weight: $fw-600;
+                            font-size: $fs-5;
+                            line-height: $lh-2;
+
+                            @include container-lg{
+                                padding: $spacer-4 $spacer-0 $spacer-3 $spacer-0;
+                            }
+                        }
+
+                        .main-content{
+                            @include container-lg{
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                height: 72px;
+
+                                &.four-lines{
+                                    -webkit-line-clamp: 4;
+                                    height: 96px;
+                                }
+                            }
+                        }
+
+                        .sub-content{
+                            @include container-lg{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .article-aside {
+                width: 306px;
+                background-color: $additionalLightGray;
+                flex-shrink: 0;
+                padding: $spacer-20;
+
+                @include container-lg {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                .menu-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: $spacer-8;
+
+                    @include container-lg {
+                        flex-direction: row;
+                        padding: $spacer-5 0;
+                        overflow-x: auto;
+
+                        .menu-item:first-child {
+                            padding-left: $spacer-3;
+                        }
+
+                        .menu-item:last-child {
+                            padding-right: $spacer-3;
+                        }
+                    }
+
+                    .menu-item {
+
+                        @include container-lg {
+                            flex-shrink: 0;
+                        }
+
+                        a {
+                            color: $mediumGray;
+                            text-decoration: none;
+
+                            @include container-lg {
+                                @include fs-6;
+                            }
+
+                            &.active {
+                                color: $darkestGray;
+                                border-bottom: 2px solid $darkestGray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
