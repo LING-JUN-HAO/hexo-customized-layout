@@ -1628,6 +1628,11 @@ img {
   display: flex;
   gap: 1.5rem;
 }
+@media (max-width: 1296px) {
+  .blog-wrapper .blog-container .article-box {
+    padding: 0rem 1rem;
+  }
+}
 @media (max-width: 992px) {
   .blog-wrapper .blog-container .article-box {
     flex-direction: column-reverse;
