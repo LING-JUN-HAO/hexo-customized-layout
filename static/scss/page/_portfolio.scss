@@ -182,13 +182,14 @@
             .page {
                 padding: 2px 13px;
                 border-radius: 4px;
+                cursor: pointer;
     
                 a {
                     color: $darkGray;
                 }
             }
     
-            .page.active {
+            .page.active, .page:hover {
                 background-color: $darkestGray;
     
                 a {

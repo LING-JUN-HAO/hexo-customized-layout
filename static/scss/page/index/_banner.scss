@@ -65,6 +65,34 @@
                     display: flex;
                     gap: $spacer-4;
                     padding-top: $spacer-15;
+
+                    .social-item{
+                        position: relative;
+
+                        &:hover::after{
+                            opacity: .3;
+                        }
+                        
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-color: #FFCC99;
+                            border-radius: 50%;
+                            height: 56px;
+                            width: 56px;
+                            z-index: -1;
+                            transition: all .5s ease;
+                            transform: scale(1.1);
+                            opacity: 0;
+
+                            @include container-lg{
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                    }
     
                     img {
                         @include container-lg{

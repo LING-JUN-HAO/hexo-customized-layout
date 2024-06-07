@@ -26,6 +26,12 @@ $('.pagination .page  a').click(function(e){
   $(this).parent().addClass('active');
 });
 
+$('.menu-group .menu-item a').click(function(e){
+  e.preventDefault()
+  $('.menu-group .menu-item').removeClass('active');
+  $(this).parent().addClass('active');
+});
+
 function overlayOpen () {
   $('body').addClass('overlay');
 }
