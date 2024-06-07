@@ -17,24 +17,29 @@
     flex-direction: column;
     cursor: pointer;
 
+    &:hover .bg img{
+      transform: scale(1.1);
+    }
+
     @include container-lg {
       height: auto;
     }
 
     .bg {
-      padding-bottom: $spacer-4;
-
-      @include container-lg {
-        height: 250px;
-      }
+      height: 234px;
+      overflow: hidden;
+      border-radius: .5rem;
 
       img {
+        transition: all .3s ease;
         border: 1px solid $backgroundDark100;
         border-radius: .5rem;
       }
     }
 
     .content {
+      padding-top: $spacer-4;
+
       .title {
         color: $darkGray;
         font-weight: $fw-700;
