@@ -20,17 +20,8 @@ $('.navbar-btn ').click(function () {
   }
 })
 
-$('.pagination .page  a').click(function(e){
-  e.preventDefault()
-  $('.pagination .page').removeClass('active');
-  $(this).parent().addClass('active');
-});
-
-$('.menu-group .menu-item a').click(function(e){
-  e.preventDefault()
-  $('.menu-group .menu-item').removeClass('active');
-  $(this).parent().addClass('active');
-});
+setupClickHandlers('.pagination', '.page', false);
+setupClickHandlers('.menu-group', '.menu-item', true);
 
 function overlayOpen () {
   $('body').addClass('overlay');
@@ -38,4 +29,34 @@ function overlayOpen () {
 
 function overlayClose () {
   $('body').removeClass('overlay');
+}
+
+function setupClickHandlers(containerSelector, itemSelector, filterType) {
+  $(containerSelector).on('click', itemSelector + ' a', function(e) {
+    e.preventDefault();
+  });
+
+  $(containerSelector).on('click', itemSelector, function() {
+    $(containerSelector + ' ' + itemSelector).removeClass('active');
+    $(this).addClass('active');
+    if(filterType){
+      const filter = $(this).data('filter');
+      filterArticles(filter)
+    };
+  });
+}
+
+function filterArticles(filter = '全部文章') {
+  if (filter === '全部文章' || filter === '平面設計') {
+      $('.article-content-group .card').show();
+  } else {
+      $('.article-content-group .card').each(function() {
+          const tag = $(this).find('.tag').text();
+          if (tag === filter) {
+              $(this).show();
+          } else {
+              $(this).hide();
+          }
+      });
+  }
 }
