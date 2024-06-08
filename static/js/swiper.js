@@ -17,7 +17,6 @@ var swiper = new Swiper(".article-swiper-container", {
         el: ".swiper-pagination",
         clickable: true,
         renderBullet: function (index, className) {
-          console.log('className', className)
           return '<span class="' + className + '">' + "</span>";
         }
       }
