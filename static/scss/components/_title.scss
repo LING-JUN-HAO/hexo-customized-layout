@@ -4,7 +4,7 @@
     justify-content: center;
 
     @include container-lg{
-        padding: 80px 63px 40px;
+        padding: 80px 0px 40px;
     }
 
     .main-title {
@@ -66,6 +66,7 @@
 
             &::after {
                 left: 100%;
+                margin-left: 110px;
 
                 @include container-lg{
                     margin-left: $spacer-18;
