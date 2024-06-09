@@ -3,8 +3,8 @@
 
 html,
 body {
-    width: 100%;
     font-family: "Noto Sans TC", sans-serif;
+    line-height: $lh-3;
 }
 
 body.overlay {
@@ -40,4 +40,9 @@ img {
     max-width: 100%;
     object-fit: cover;
     height: 100%;
+}
+
+.container{
+    max-width: 1296px;
+    margin: $spacer-0 $spacer-auto;
 }

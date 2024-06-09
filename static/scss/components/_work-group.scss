@@ -1,16 +1,10 @@
 .work-group {
-    max-width: 1296px;
-    margin: $spacer-0 $spacer-auto;
-}
-
-.work-group {
     display: flex;
     flex-wrap: wrap;
     gap: $spacer-6;
 
     @include container-lg {
         gap: $spacer-12;
-        width: 351px;
     }
 
     .work {
@@ -26,7 +20,7 @@
         }
 
         @include container-lg{
-            width: auto;
+            width: 100%;
         }
 
         .bg{
@@ -37,12 +31,12 @@
             }
 
             .work-img {
+                width: 100%;
                 transition: all .3s ease;
             }
         }
 
         .content {
-            padding-top: $spacer-4;
             padding: $spacer-4 $spacer-0 $spacer-0 $spacer-4;
 
             .work-title {

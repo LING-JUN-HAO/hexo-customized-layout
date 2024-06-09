@@ -1,0 +1,15 @@
+@include contact-wrapper{
+    .title-container {
+        flex-direction: column;
+        gap: $spacer-6;
+        align-items: center;
+
+        .sub-title {
+            color: $gray;
+        }
+    }
+
+    .contact-info{
+        display: flex;
+    }
+}

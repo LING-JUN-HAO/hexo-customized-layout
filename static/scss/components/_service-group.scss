@@ -7,11 +7,14 @@
 
     .service-item {
         background: linear-gradient(315deg, #1E1E1E 0%, #1E1E1E 49.97%, #000000 50%);
-        padding: 20px 30px;
+        padding: $spacer-20 97px;
         border-radius: 1.5rem;
         width: 306px;
-        height: 306px;
         cursor: pointer;
+
+        @include container-lg{
+            padding: 86.5px 105px;
+        }
     }
 
     .service-item {
@@ -33,7 +36,6 @@
         .sub-title {
             font-weight: $fw-700;
             font-size: $spacer-7;
-            line-height: $lh-3;
             color: $white;
             padding-top: $spacer-6;
 

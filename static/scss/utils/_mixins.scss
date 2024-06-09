@@ -110,3 +110,9 @@
         @content;
     }
 }
+
+@mixin contact-wrapper {
+    .contact-wrapper {
+        @content;
+    }
+}

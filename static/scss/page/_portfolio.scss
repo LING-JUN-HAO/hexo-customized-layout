@@ -172,8 +172,6 @@
             justify-content: center;
             gap: $spacer-4;
             padding-top: $spacer-18;
-            max-width: 1296px;
-            margin: $spacer-0 $spacer-auto;
     
             @include container-lg {
                 padding-top: $spacer-12;
