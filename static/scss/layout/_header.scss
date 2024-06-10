@@ -1,4 +1,4 @@
-.header-container {
+.header {
 
     padding: $spacer-8 $spacer-0;
     border-bottom: 1px solid $backgroundDark100;
@@ -31,7 +31,7 @@
         display: none;
     }
 
-    nav {
+    .navbar {
         position: relative;
         display: flex;
 
@@ -67,15 +67,15 @@
         display: none;
     }
 
-    .nav-list {
+    .navbar-list {
         display: flex;
         align-items: center;
         gap: $spacer-10;
         margin: $spacer-0 $spacer-auto;
-        transition: all .5s ease;
 
         @include container-lg {
             opacity: 0;
+            visibility: hidden;
         }
 
         &.active {
@@ -90,10 +90,12 @@
                 gap: $spacer-6;
                 background-color: $white;
                 opacity: 1;
+                visibility: visible;
+                transition: opacity .3s ease-in;
             }
         }
 
-        .nav-item {
+        .navbar-item {
             position: relative;
             padding: $spacer-1 $spacer-2;
             transition: all .4s ease;
@@ -105,8 +107,8 @@
 
             &.active::before,&:hover::before,
             &.active::after,&:hover::after,
-            &.active .nav-link::before,&:hover .nav-link::before,
-            &.active .nav-link::after,&:hover .nav-link::after {
+            &.active .navbar-link::before,&:hover .navbar-link::before,
+            &.active .navbar-link::after,&:hover .navbar-link::after {
                 opacity: 1;
             }
 
@@ -133,7 +135,7 @@
                 border-right: 1px solid $gray;
             }
 
-            .nav-link {
+            .navbar-link {
 
                 &::before,
                 &::after {

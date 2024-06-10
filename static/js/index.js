@@ -1,6 +1,6 @@
 $(function() {
   const currentPath = window.location.pathname.split("/").pop();
-  $('.nav-list .nav-link').each(function() {
+  $('.navbar-list .navbar-link').each(function() {
       const linkPath = $(this).attr('href').split("/").pop();
       if (currentPath === linkPath) {
           $(this).parent().addClass('active');
@@ -11,9 +11,9 @@ $(function() {
 $('.navbar-btn ').click(function () {
   const $this = $(this);
   $this.toggleClass('active');
-  $('.menu, .closure, .nav-list').toggleClass('close active');
+  $('.menu, .closure, .navbar-list').toggleClass('close active');
 
-  if ($('.nav-list').hasClass('active')) {
+  if ($('.navbar-list').hasClass('active')) {
     overlayOpen();
   } else {
     overlayClose();
