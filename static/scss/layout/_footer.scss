@@ -1,4 +1,4 @@
-.footer-container {
+.footer {
     padding: $spacer-30 $spacer-0;
     background-image: url('../img/footer-bg-lg.png');
     background-repeat: no-repeat;
@@ -63,9 +63,6 @@
     }
 
     .contact-list {
-        display: flex;
-        flex-direction: column;
-        gap: $spacer-6;
         width: 306px;
 
         .contact-item {
@@ -101,6 +98,10 @@
             &:not(.active):hover {
                 background-color: $extraLightGray;
             }
+        }
+
+        .contact-item + .contact-item{
+            margin-top: $spacer-6;
         }
     }
 }
